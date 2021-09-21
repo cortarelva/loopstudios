@@ -1,59 +1,176 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta charset="utf-8">
+  <title>LoopStudios</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Loopstudios landing page</title>
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="../loopstudios-landing-page-main/css/normalize.css">
+  <link rel="stylesheet" href="../loopstudios-landing-page-main/css/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
 </head>
+
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
 
-  Immersive experiences that deliver
+  <!-- Add your site or application content here -->
+  
+  <!--hero comp-->
+  <section class="hero-comp">
+    <div id="sidenavWindow" class="sidenav">
+      <div class="container1">
+        <img src="../loopstudios-landing-page-main/images/logo.svg" alt="logo">
+        <a class="sidenav-close" href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+      </div>
+      <div class="sidenav-list">
+        <a class="sidenav-item" href="#">About</a>
+        <a class="sidenav-item" href="#">Careers</a>
+        <a class="sidenav-item" href="#">Events</a>
+        <a class="sidenav-item" href="#">Products</a>
+        <a class="sidenav-item" href="#">Suport</a>
+      </div>
+    </div>
+    <navbar class="navbar">
+      <h3>loopstudios</h3>
+      <div class="menu-container">
+        <ul class="menu-list">
+          <li class="menu-item"><a href="#">About</a></li>
+          <li class="menu-item"><a href="#">Careers</a></li>
+          <li class="menu-item"><a href="#">Events</a></li>
+          <li class="menu-item"><a href="#">Products</a></li>
+          <li class="menu-item"><a href="#">Support</a></li>
+        </ul>
+        <img class="mobile-menu" id="menuOpen" onclick="openMenu()" src="../loopstudios-landing-page-main/images/icon-hamburger.svg" width="26" alt="menu">
+      </div>
+    </navbar>
+    <div class="hero-text">
+        immersive<br> experiences<br> that<br class="hero-rem"> deliver
+    </div>
+  </section>
+  <!--End hero comp-->
+  <!--article comp-->
+  <section class="article-comp">
+    <img src="../loopstudios-landing-page-main/images/mobile/image-interactive.jpg" class="img-interactive" alt="image of person with vr equipment">
+    <div class="text-comp">
+        <h1>The leader in interactive vr</h1>
+        <p> Founded in 2011, Loopstudios has been producing world-class virtual reality projects 
+          for some of the best companies around the globe. Our award-winning creations have transformed 
+          businesses through digital experiences that bind to their brand.</p>
+    </div>
+  </section>
+  <!--end article comp-->
+  <!--blocks comp start-->
+    <section class="block-comp">
+      <div class="block-header">
+        <h1>Our creations</h1>
+      <input class="btn-seeall-desktop" type="text" value="SEE ALL">
+      </div>
+      <div class="block-container">
+        <div class="block">
+            <img class="block-img-mobile" src="../loopstudios-landing-page-main/images/mobile/image-deep-earth.jpg" alt="img1">
+            <img class="block-img-desktop" src="../loopstudios-landing-page-main/images/desktop/image-deep-earth.jpg" alt="img1">
+            <p class="block-img-text">Deep<br>earth</p>
+        </div>
+        <div class="block">
+            <img class="block-img-mobile" src="../loopstudios-landing-page-main/images/mobile/image-night-arcade.jpg" alt="img2">
+            <img class="block-img-desktop" src="../loopstudios-landing-page-main/images/desktop/image-night-arcade.jpg" alt="img2">
+            <p class="block-img-text">Night<br>Arcade</p>
+        </div>
+        <div class="block">
+            <img class="block-img-mobile" src="../loopstudios-landing-page-main/images/mobile/image-soccer-team.jpg" alt="img3">
+            <img class="block-img-desktop" src="../loopstudios-landing-page-main/images/desktop/image-soccer-team.jpg" alt="img3">
+            <p class="block-img-text">Soccer<br>team vr</p>
+        </div>
+        <div class="block">
+            <img class="block-img-mobile" src="../loopstudios-landing-page-main/images/mobile/image-grid.jpg" alt="img4">
+            <img class="block-img-desktop" src="../loopstudios-landing-page-main/images/desktop/image-grid.jpg" alt="img4">
+            <p class="block-img-text">the<br>grid</p>
+        </div>
+        <div class="block">
+            <img class="block-img-mobile" src="../loopstudios-landing-page-main/images/mobile/image-from-above.jpg" alt="img5">
+            <img class="block-img-desktop" src="../loopstudios-landing-page-main/images/desktop/image-from-above.jpg" alt="img5">
+            <p class="block-img-text">from up<br>above</p>
+        </div>
+        <div class="block">
+            <img class="block-img-mobile" src="../loopstudios-landing-page-main/images/mobile/image-pocket-borealis.jpg" alt="img6">
+            <img class="block-img-desktop" src="../loopstudios-landing-page-main/images/desktop/image-pocket-borealis.jpg" alt="img6">
+            <p class="block-img-text">pocket<br>borealis</p>
+        </div>
+        <div class="block">
+            <img class="block-img-mobile" src="../loopstudios-landing-page-main/images/mobile/image-curiosity.jpg" alt="img7">
+            <img class="block-img-desktop" src="../loopstudios-landing-page-main/images/desktop/image-curiosity.jpg" alt="img7">
+            <p class="block-img-text">the<br>curiosity</p>
+        </div>
+        <div class="block">
+            <img class="block-img-mobile" src="../loopstudios-landing-page-main/images/mobile/image-fisheye.jpg" alt="img8">
+            <img class="block-img-desktop" src="../loopstudios-landing-page-main/images/desktop/image-fisheye.jpg" alt="img8">
+            <p class="block-img-text">make it<br>fisheye</p>
+        </div>
+      </div>
+     <input class="btn-seeall-mobile" type="text" value="SEE ALL">
+    </section>
+  <!--end blocks comp-->
+  <!--start footer comp-->
+    <footer class="footer">
+      <div class="footer-group-1">
+        <img class="footer-logo" src="../loopstudios-landing-page-main/images/logo.svg" alt="footer logo">
+       <div class="links-list">
+         <div class="links-list-item">About</div>
+         <div class="links-list-item">Careers</div>
+         <div class="links-list-item">Events</div>
+         <div class="links-list-item">Products</div>
+         <div class="links-list-item">Support</div>
+       </div>
+      </div>
+       <div class="footer-group-2">
+       <div class="icons-list">
+         <a href="#">
+            <img src="../loopstudios-landing-page-main/images/icon-facebook.svg" alt="facebook icon">
+         </a>
+          <a href="#">
+            <img src="../loopstudios-landing-page-main/images/icon-twitter.svg" alt="twitter icon">
+         </a>
+         <a href="#">
+            <img src="../loopstudios-landing-page-main/images/icon-pinterest.svg" alt="pinterest icon">
+         </a>
+         <a href="#">
+            <img src="../loopstudios-landing-page-main/images/icon-instagram.svg" alt="instagram icon">
+         </a>
+       </div>
+       <p class="footer-copy">&copy 2021 Loopstudios. All rights reserved.</p>
+       </div>
+    </footer>
 
-  The leader in interactive VR
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
 
-  Our creations
 
-  See all
 
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
+  <script src="../loopstudios-landing-page-main/js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="../loopstudios-landing-page-main/js/plugins.js"></script>
+  <script src="../loopstudios-landing-page-main/js/main.js"></script>
 
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
+
 </html>
